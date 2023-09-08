@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>customer list</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <link rel="canonical" href="https://v5.getbootstrap.com/docs/5.0/examples/navbar-bottom/">
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+    
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/index.html">E-Bank</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" aria-current="page" href="#">Customers</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    <div class="d-flex flex-column align-items-center">
+        <br>
+        <div class="h3">Name: Mariam Gamal</div>
+        <div class="h4">Bank balance: $<span>100,000</span></div>
+        <div>
+            <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#transfermoney">Transfer
+                Money</button>
+            <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#checkhistory">Transfering
+                History</button>
+        </div>
+    </div>
+    
+    <div class="modal" tabindex="-1" id="transfermoney">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Transfer Money</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Transfer money modal content goes here.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal" tabindex="-1" id="checkhistory">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Transfering History</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Transfering history modal content goes here.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Include Bootstrap 5 CSS and JavaScript -->
+
+
+        <main> 
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Current Balance</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>John Doe</td>
+                    <td>john@example.com</td>
+                    <td>$<span>1000</span></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Jane Smith</td>
+                    <td>jane@example.com</td>
+                    <td>$<span>1500</span></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Bob Johnson</td>
+                    <td>bob@example.com</td>
+                    <td>$<span>800</span></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Alice Brown</td>
+                    <td>alice@example.com</td>
+                    <td>$<span>1200</span></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>David Lee</td>
+                    <td>david@example.com</td>
+                    <td>$<span>2000</span></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Lisa Davis</td>
+                    <td>lisa@example.com</td>
+                    <td>$<span>900</span></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Michael Wilson</td>
+                    <td>michael@example.com</td>
+                    <td>$<span>1800</span></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Sarah Turner</td>
+                    <td>sarah@example.com</td>
+                    <td>$<span>750</span></td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Kevin Martinez</td>
+                    <td>kevin@example.com</td>
+                    <td>$<span>1600</span></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Emily White</td>
+                    <td>emily@example.com</td>
+                    <td>$<span>1100</span></td>
+                </tr>
+                </tbody>
+            </table>
+        </main>
+</body>
+</html>
