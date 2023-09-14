@@ -27,19 +27,15 @@ Before you begin, ensure you have met the following requirements:
 
 1. Clone the repository:
 
-   ```
-   git clone https://github.com/your-username/basic-banking-system.git ```
+   ``` git clone https://github.com/your-username/basic-banking-system.git ```
 2. Change into the project directory:
-```
-cd basic-banking-system```
+```cd basic-banking-system```
 
 3. Install the dependencies:
-
-npm install
+```npm install```
 
 4. Start the server:
-```
-nodemon server.js```
+```nodemon server.js```
 
 
 ## Usage
@@ -48,8 +44,7 @@ nodemon server.js```
 
 2. The website will take you through the following flow:
 - **Homepage:** Landing page with a button to view all customers.
-- **View All Customers:** List of all customers with their names and current balances. Click on a customer to view their details.
-- **Customer Details:** View a customer's details and choose to transfer money to another customer.
+- **View All Customers and their details:** List of all customers with their names and current balances.
 - **Transfer Money:** Transfer money to another customer by selecting the recipient from the list of customers.
 - **View Transfer History:** View a table of all transfers that have occurred.
 
