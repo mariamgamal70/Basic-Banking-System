@@ -52,12 +52,12 @@
         </nav>
     <div class="d-flex flex-column align-items-center">
         <br>
-        <div class="h3">Name: Mariam Gamal</div>
-        <div class="h4">Bank balance: $<span>100,000</span></div>
+        <div class="h3 admin-name"></div>
+        <div class="h4">Bank balance: $<span class="admin-balance"></span></div>
         <div>
             <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#transfermoney">Transfer
                 Money</button>
-            <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#checkhistory">Transfering
+            <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#checkhistory" id="history-btn">Transfering
                 History</button>
         </div>
     </div>
@@ -70,12 +70,21 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <p>Transfer money modal content goes here.</p>
+                    <form method="POST" action="/user" >
+                    <div class="mb-3">
+                        <label for="emailtransfer" class="form-label">Email </label>
+                        <input type="email" class="form-control" id="emailtransfer" placeholder="name@example.com" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="amounttransfer" class="form-label">Amount to transfer</label>
+                        <input type="number" class="form-control" id="amounttransfer" placeholder="$" required>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button class="btn btn-primary w-50" type="submit">Transfer</button>
                 </div>
+                </form>
             </div>
         </div>
     </div>
@@ -88,92 +97,41 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <p>Transfering history modal content goes here.</p>
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Amount</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+                        <tbody class="history-table-body">
+                    
+                        </tbody>
+                    </table>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
                 </div>
             </div>
         </div>
     </div>
-    
-    <!-- Include Bootstrap 5 CSS and JavaScript -->
-
-
         <main> 
             <table class="table table-hover">
                 <thead>
-                <tr>
+                <tr>    
                 <th>ID</th>
                 <th>Name</th>
                 <th>Email</th>
-                <th>Current Balance</th>
+                <th>Balance</th>
                 </tr>
                 </thead>
-                <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>John Doe</td>
-                    <td>john@example.com</td>
-                    <td>$<span>1000</span></td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Jane Smith</td>
-                    <td>jane@example.com</td>
-                    <td>$<span>1500</span></td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Bob Johnson</td>
-                    <td>bob@example.com</td>
-                    <td>$<span>800</span></td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>Alice Brown</td>
-                    <td>alice@example.com</td>
-                    <td>$<span>1200</span></td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>David Lee</td>
-                    <td>david@example.com</td>
-                    <td>$<span>2000</span></td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>Lisa Davis</td>
-                    <td>lisa@example.com</td>
-                    <td>$<span>900</span></td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td>Michael Wilson</td>
-                    <td>michael@example.com</td>
-                    <td>$<span>1800</span></td>
-                </tr>
-                <tr>
-                    <td>8</td>
-                    <td>Sarah Turner</td>
-                    <td>sarah@example.com</td>
-                    <td>$<span>750</span></td>
-                </tr>
-                <tr>
-                    <td>9</td>
-                    <td>Kevin Martinez</td>
-                    <td>kevin@example.com</td>
-                    <td>$<span>1600</span></td>
-                </tr>
-                <tr>
-                    <td>10</td>
-                    <td>Emily White</td>
-                    <td>emily@example.com</td>
-                    <td>$<span>1100</span></td>
-                </tr>
+                <tbody class="table-body">
+                
                 </tbody>
             </table>
         </main>
+        <script src="app.js"></script>
 </body>
 </html>
