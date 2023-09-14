@@ -70,11 +70,10 @@ Before you begin, ensure you have met the following requirements:
 
 ## Screenshots
 
-![Homepage](screenshots/homepage.png)
-![View All Customers](screenshots/view-all-customers.png)
-![Customer Details](screenshots/customer-details.png)
-![Transfer Money](screenshots/transfer-money.png)
-![Transfer History](screenshots/transfer-history.png)
+![Homepage](/hompage.png)
+![View All Customers](/customers.png)
+
+
 
 ## Contributing
 
