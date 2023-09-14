@@ -29,12 +29,15 @@ Before you begin, ensure you have met the following requirements:
 
    ``` git clone https://github.com/your-username/basic-banking-system.git ```
 2. Change into the project directory:
+   
 ```cd basic-banking-system```
 
 3. Install the dependencies:
+ 
 ```npm install```
 
 4. Start the server:
+   
 ```nodemon server.js```
 
 
@@ -70,7 +73,7 @@ Before you begin, ensure you have met the following requirements:
 
 ## Screenshots
 
-![Homepage](/hompage.png)
+![Homepage](/homepage.png)
 ![View All Customers](/customers.png)
 
 
